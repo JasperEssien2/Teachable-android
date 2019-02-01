@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/notification_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="Yesterday" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/notifications_item_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#EEEEEE"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/notification_profile_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/place_holder"
+                app:civ_border_color="@color/colorBlack"
+                app:civ_border_width="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/notification_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/notification_profile_pic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/notification_profile_pic"
+                app:layout_constraintTop_toBottomOf="@+id/notification_profile_pic"
+                tools:text="John Doe sent you a notification" />
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</layout>

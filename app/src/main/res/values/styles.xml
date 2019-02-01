@@ -15,4 +15,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="DialogUploadButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/button_green_background</item>
+    </style>
+
 </resources>

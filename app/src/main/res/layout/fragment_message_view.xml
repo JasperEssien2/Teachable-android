@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="300dp">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/message_view_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:elevation="7dp"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/frameLayout"
+                        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+                        tools:text="Protective Preventive Maintenance" />
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/curved_rectangle"
+                        android:minWidth="80dp"
+                        android:padding="2dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/message_view_type_tag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/school"
+                            android:textColor="@color/colorWhite" />
+
+                    </FrameLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/message_view_profile_pic"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/place_holder"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+                    <TextView
+                        android:id="@+id/item_school_message_user_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/item_school_message_date"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/message_view_profile_pic"
+                        app:layout_constraintTop_toTopOf="@+id/message_view_profile_pic"
+                        tools:text="David James" />
+
+                    <TextView
+                        android:id="@+id/item_school_message_message"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="#111111"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/message_view_profile_pic"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/message_view_profile_pic"
+                        tools:text="to me" />
+
+                    <TextView
+                        android:id="@+id/item_school_message_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:maxLines="1"
+                        android:textColor="#111111"
+                        app:layout_constraintBottom_toTopOf="@+id/item_school_message_user_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/item_school_message_user_name"
+                        tools:text="Jan 5, 2018" />
+
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_end="50dp" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/message_view_message_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                tools:text="Hello David,\n\n blah blah blah blah nlah" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                app:cardBackgroundColor="#EEEEEE"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/message_view_message_detail">
+
+                <TextView
+                    android:id="@+id/message_view_click_to_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/click_here_to_reply_text" />
+
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</layout>

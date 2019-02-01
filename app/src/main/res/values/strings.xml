@@ -33,7 +33,16 @@
     <string name="enter_code_message">We just sent you a reset code. Enter your code below:</string>
     <string name="reset_code">Reset Code</string>
     <string name="resend_code">"Didn/'t get the code? Resend Code"</string>
-
+    <string name="message_main_schools_header">Schools</string>
+    <string name="message_main_individuals_header">Individuals</string>
+    <string name="click_here_to_reply_text">Click here to <u>Reply</u></string>
+    <string name="upload_path_text">Select Your Picture</string>
+    <string name="choose_file_text">Choose File</string>
+    <string name="upload_text">Upload</string>
+    <string name="featured_tutors">Featured Tutors</string>
+    <string name="view_all">View All</string>
+    <string name="featured_courses">Featured Courses</string>
+    <string name="featured_schools">Featured Schools</string>
 
 
 </resources>

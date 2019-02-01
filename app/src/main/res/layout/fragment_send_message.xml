@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="32dp">
+
+            <EditText
+                android:id="@+id/send_message_to_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/send_message_edittex_background_top_curve"
+                android:padding="16dp"
+                android:text="To"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/send_message_cc_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/send_message_edittex_background_top_curve"
+                android:padding="16dp"
+                android:text="CC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/send_message_to_edittext" />
+
+            <EditText
+                android:id="@+id/send_message_subject_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/send_message_edittex_background_top_curve"
+                android:padding="16dp"
+                android:text="Subject"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/send_message_cc_edittext" />
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/send_message_text_style_frame"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/send_message_edittex_background_top_curve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/send_message_subject_edittext">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/send_message_text_style_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Normal" />
+
+                    <ImageButton
+                        android:id="@+id/send_message_text_style_normal_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/ic_drop_down" />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal"-->
+                <!--app:layout_constraintBottom_toTopOf="@+id/linearLayout4"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/linearLayout4"-->
+                <!--tools:layout_editor_absoluteX="91dp">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/send_message_text_style_font_family"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:text="San" />-->
+
+                <!--<ImageButton-->
+                <!--android:id="@+id/send_message_text_style_font_family_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@null"-->
+                <!--android:src="@drawable/ic_drop_down" />-->
+                <!--</LinearLayout>-->
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/send_message_field_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/send_message_edittex_background_bottom_curve"
+                android:gravity="top"
+                android:padding="16dp"
+                android:text="Write Something.."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/send_message_text_style_frame" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</layout>
